@@ -1,1 +1,6 @@
-./Engine/datasets/fer2013
+Engine/datasets/
+Engine/datasets/
+Engine/models/__pycache__/
+Engine/utils/__pycache__/
+.idea/
+
