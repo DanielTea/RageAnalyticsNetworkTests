@@ -18,7 +18,7 @@ class DataManager(object):
         elif self.dataset_name == 'imdb':
             self.dataset_path = '../datasets/imdb_crop/imdb.mat'
         elif self.dataset_name == 'fer2013':
-            self.dataset_path = '/Users/danieltremer/Documents/GIT-Repositories/rage-analytics/datasets/fer2013/fer2013.csv'
+            self.dataset_path = './datasets/fer2013/fer2013.csv'
         elif self.dataset_name == 'KDEF':
             self.dataset_path = '../datasets/KDEF/'
         else:

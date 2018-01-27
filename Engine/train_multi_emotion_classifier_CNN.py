@@ -28,7 +28,7 @@ validation_split = .2
 verbose = 1
 num_classes = 7
 patience = 50
-base_path = '../trained_models/emotion_models/'
+base_path = './trained_models/emotion_models/'
 
 # data generator
 data_generator = ImageDataGenerator(
