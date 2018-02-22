@@ -22,7 +22,7 @@ num_epochs = 10000
 input_shape = (64, 64, 1)
 validation_split = .2
 verbose = 1
-num_classes = 7
+num_classes = 6
 patience = 50
 base_path = './trained_models/emotion_models/'
 

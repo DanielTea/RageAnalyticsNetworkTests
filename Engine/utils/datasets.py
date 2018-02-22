@@ -21,6 +21,8 @@ class DataManager(object):
             self.dataset_path = './datasets/fer2013/fer2013.csv'
         elif self.dataset_name == 'KDEF':
             self.dataset_path = '../datasets/KDEF/'
+        elif self.dataset_name == 'Disgust+Anger':
+            self.dataset_path = '../datasets/fer_cohn_disgust_to_angry.csv'
         else:
             raise Exception('Incorrect dataset name, please input imdb or fer2013')
 
@@ -100,6 +102,9 @@ class DataManager(object):
 def get_labels(dataset_name):
     if dataset_name == 'fer2013':
         return {0:'angry',1:'disgust',2:'fear',3:'happy',
+                4:'sad',5:'surprise',6:'neutral'}
+    elif dataset_name == 'Disgust+Anger':
+        return {0:'angry',2:'fear',3:'happy',
                 4:'sad',5:'surprise',6:'neutral'}
     elif dataset_name == 'imdb':
         return {0:'woman', 1:'man'}

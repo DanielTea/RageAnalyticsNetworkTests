@@ -358,6 +358,9 @@ def tiny_XCEPTION(input_shape, num_classes, l2_regularization=0.01):
     x = Conv2D(num_classes, (3, 3),
             #kernel_regularizer=regularization,
             padding='same')(x)
+
+
+
     x = GlobalAveragePooling2D()(x)
     output = Activation('softmax',name='predictions')(x)
 
